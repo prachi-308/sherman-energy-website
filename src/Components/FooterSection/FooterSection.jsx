@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
   return (
@@ -21,10 +22,10 @@ const FooterSection = () => {
               Pioneering sustainable energy solutions for a cleaner, greener future. Your trusted partner in solar innovation.
             </p>
             <div className="flex justify-center space-x-4 md:justify-start">
-              <a href="#" className="text-gray-400 transition-colors hover:text-white"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="text-gray-400 transition-colors hover:text-white"><i className="fab fa-twitter"></i></a>
-              <a href="#" className="text-gray-400 transition-colors hover:text-white"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="text-gray-400 transition-colors hover:text-white"><i className="fab fa-linkedin-in"></i></a>
+              <a href="https://facebook.com/shermanenergy" target="_blank" rel="noopener noreferrer" className="text-gray-400 transition-colors hover:text-white"><i className="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/shermanenergy" target="_blank" rel="noopener noreferrer" className="text-gray-400 transition-colors hover:text-white"><i className="fab fa-twitter"></i></a>
+              <a href="https://instagram.com/shermanenergy" target="_blank" rel="noopener noreferrer" className="text-gray-400 transition-colors hover:text-white"><i className="fab fa-instagram"></i></a>
+              <a href="https://linkedin.com/company/shermanenergy" target="_blank" rel="noopener noreferrer" className="text-gray-400 transition-colors hover:text-white"><i className="fab fa-linkedin-in"></i></a>
             </div>
           </motion.div>
 
@@ -37,12 +38,12 @@ const FooterSection = () => {
           >
             <h4 className="mb-4 text-lg font-semibold text-white">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#home" className="transition-colors hover:text-white">Home</a></li>
-              <li><a href="#about" className="transition-colors hover:text-white">About Us</a></li>
-              <li><a href="#services" className="transition-colors hover:text-white">Services</a></li>
-              <li><a href="#projects" className="transition-colors hover:text-white">Projects</a></li>
-              <li><a href="#blog" className="transition-colors hover:text-white">Blog</a></li>
-              <li><a href="#contact" className="transition-colors hover:text-white">Contact</a></li>
+              <li><Link to="/" className="transition-colors hover:text-white">Home</Link></li>
+              <li><Link to="/about" className="transition-colors hover:text-white">About Us</Link></li>
+              <li><Link to="/services" className="transition-colors hover:text-white">Services</Link></li>
+              <li><Link to="/projects" className="transition-colors hover:text-white">Projects</Link></li>
+              <li><Link to="/blog" className="transition-colors hover:text-white">Blog</Link></li>
+              <li><Link to="/contact" className="transition-colors hover:text-white">Contact</Link></li>
             </ul>
           </motion.div>
 
@@ -55,10 +56,10 @@ const FooterSection = () => {
           >
             <h4 className="mb-4 text-lg font-semibold text-white">Our Services</h4>
             <ul className="space-y-2">
-              <li><a href="#epc" className="transition-colors hover:text-white">Engineering, Procurement, Construction</a></li>
-              <li><a href="#oandm" className="transition-colors hover:text-white">Operation and Maintenance</a></li>
-              <li><a href="#reeng" className="transition-colors hover:text-white">Re-engineering and Redevelopment</a></li>
-              <li><a href="#turnkey" className="transition-colors hover:text-white">Turnkey</a></li>
+              <li><Link to="/services/epc" className="transition-colors hover:text-white">Engineering, Procurement, Construction</Link></li>
+              <li><Link to="/services/omm" className="transition-colors hover:text-white">Operation and Maintenance</Link></li>
+              <li><Link to="/services/re-engineering" className="transition-colors hover:text-white">Re-engineering and Redevelopment</Link></li>
+              <li><Link to="/services/turnkey" className="transition-colors hover:text-white">Turnkey</Link></li>
             </ul>
           </motion.div>
 
@@ -78,9 +79,9 @@ const FooterSection = () => {
         <div className="pt-6 text-center border-t border-gray-700">
           <p className="mb-2 text-sm">© 2025 Sherman Energy Limited. All rights reserved.</p>
           <div className="space-x-4">
-            <a href="#privacy" className="text-sm transition-colors hover:text-white">Privacy Policy</a>
-            <a href="#terms" className="text-sm transition-colors hover:text-white">Terms of Service</a>
-            <a href="#cookies" className="text-sm transition-colors hover:text-white">Cookie Policy</a>
+            <Link to="/privacy" className="text-sm transition-colors hover:text-white">Privacy Policy</Link>
+            <Link to="/terms" className="text-sm transition-colors hover:text-white">Terms of Service</Link>
+            <Link to="/cookies" className="text-sm transition-colors hover:text-white">Cookie Policy</Link>
           </div>
         </div>
       </div>
