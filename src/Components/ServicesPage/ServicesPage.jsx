@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -20,7 +21,8 @@ const ServicesPage = () => {
       items: ["Complete project design", "Quality procurement", "Professional installation", "Testing & commissioning"],
       img: "../assets/EPC3.jpg",
       icon: "fa-tools",
-      buttonText: "Learn More About EPC"
+      buttonText: "Learn More About EPC",
+      link: "/services/epc"
     },
     {
       title: "Operation and Maintenance",
@@ -28,7 +30,8 @@ const ServicesPage = () => {
       items: ["24/7 monitoring", "Preventive maintenance", "Performance optimization", "Technical support"],
       img: "../assets/ONM1.jpg",
       icon: "fa-wrench",
-      buttonText: "Explore O&M Services"
+      buttonText: "Explore O&M Services",
+      link: "/services/omm"
     },
     {
       title: "Re-engineering and Redevelopment",
@@ -36,7 +39,8 @@ const ServicesPage = () => {
       items: ["System analysis", "Technology upgrades", "Performance enhancement", "Cost optimization"],
       img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
       icon: "fa-redo",
-      buttonText: "Discover Redevelopment"
+      buttonText: "Discover Redevelopment",
+      link: "/services/re-engineering"
     },
     {
       title: "Turnkey Projects",
@@ -44,7 +48,8 @@ const ServicesPage = () => {
       items: ["Large scale projects", "Complete EPC solutions", "Immediate operation", "Professional execution"],
       img: "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
       icon: "fa-building",
-      buttonText: "View Turnkey Projects"
+      buttonText: "View Turnkey Projects",
+      link: "/services/turnkey"
     },
   ];
 
@@ -85,31 +90,19 @@ const ServicesPage = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-teal-900/70 to-transparent"></div>
                 <div className="absolute inset-0 z-10 flex items-center justify-center px-4 py-8 text-center text-white">
-                  <div className="max-w-3xl mx-auto space-y-4">
+                  <div className="flex flex-col max-w-3xl mx-auto space-y-6">
                     <h3 className="text-3xl font-bold md:text-5xl">{service.title}</h3>
-                    <p className="text-base md:text-xl">{service.desc}</p>
-                    <button className="px-6 py-3 text-lg font-semibold text-teal-600 transition duration-300 bg-white rounded-lg shadow-lg hover:bg-gray-100">
-                      {service.buttonText}
-                    </button>
+                    <p className="text-base mb-[40px] md:text-xl">{service.desc}</p>
+                    <Link to={service.link} className="inline-block mt-12">
+                      <button className="px-6 py-4 text-lg font-semibold text-teal-600 transition duration-300 bg-white rounded-lg shadow-lg hover:bg-gray-100">
+                        {service.buttonText}
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-        <div className="relative z-20 flex items-center justify-center h-full px-4 text-center md:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            className="max-w-7xl"
-          >
-            <div className="flex justify-center">
-              <button className="px-6 py-3 text-lg font-semibold text-teal-600 transition duration-300 bg-white rounded-lg shadow-lg hover:bg-gray-100 md:px-8 md:py-4">
-                Request a Free Consultation
-              </button>
-            </div>
-          </motion.div>
         </div>
       </section>
 
@@ -139,7 +132,9 @@ const ServicesPage = () => {
                     <li key={i} className="flex items-center"><span className="w-2 h-2 mr-2 bg-green-600 rounded-full"></span>{item}</li>
                   ))}
                 </ul>
-                <button className="px-4 py-2 mt-4 text-white rounded bg-emerald-600 hover:bg-emerald-700">Read More →</button>
+                <Link to={service.link}>
+                  <button className="px-4 py-2 mt-4 text-white rounded bg-emerald-600 hover:bg-emerald-700">Read More →</button>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -172,12 +167,7 @@ const ServicesPage = () => {
       <section className="py-12 text-center text-white bg-gradient-to-br from-teal-600 to-blue-700">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold md:text-4xl">Ready to Go Solar?</h2>
-          <p className="mt-4 text-lg md:text-xl">Contact our experts today for a free consultation and customized solar solution</p>
-          <div className="flex justify-center mt-6">
-            <button className="px-6 py-3 text-lg font-semibold text-teal-600 transition duration-300 bg-white rounded-lg shadow-lg hover:bg-gray-100 md:px-8 md:py-4">
-              Request a Free Consultation
-            </button>
-          </div>
+          <p className="mt-4 text-lg md:text-xl">Contact our experts today for a customized solar solution</p>
         </div>
       </section>
     </div>
