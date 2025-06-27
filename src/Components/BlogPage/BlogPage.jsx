@@ -13,7 +13,7 @@ const BlogPage = () => {
       title: "PM Surya Ghar Muft Bijli Yojana: Complete Guide",
       date: "June 26, 2024",
       excerpt: "As the world shifts towards cleaner energy solutions, solar power has become a popular choice for homeowners and businesses alike. If you've been searching for information on solar panel schemes, you're not alone! Many people are eager to understand how they can benefit from government incentives designed to promote solar energy. In this blog, we'll break down what you need to know and how you can take advantage of these schemes.",
-      img: "/src/assets/blog2.jpg",
+      img: "../assets/blog2.jpg",
       category: "Government Schemes",
       tags: ["Solar Panels"],
       fullContent: `
@@ -70,7 +70,7 @@ const BlogPage = () => {
       <section className="relative h-[50vh] md:h-[60vh] overflow-hidden pt-16">
         <div className="absolute inset-0 z-10">
           <img
-            src="/src/assets/blog1.jpg"
+            src="../assets/blog1.jpg"
             alt="Solar Energy Hero"
             className="object-cover w-full h-full"
           />

@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const OurServices = () => {
   const services = [
-    { title: "Engineering, Procurement, Construction", desc: "Smart, reliable solar EPC—design to delivery, done right.", image: "/src/assets/service-01.jpeg" },
-    { title: "Operation and Maintenance", desc: "Regular solar maintenance for maximum efficiency and long-term savings.", image: "/src/assets/ONM2.jpg" },
-    { title: "Re-engineering and Redevelopment", desc: "Innovative redesigns for better solar performance, cost-efficiency, and sustainability.", image: "/src/assets/service-03.png" },
-    { title: "Turnkey Projects", desc: "Efficient turnkey solar plants—optimized design, expert delivery, maximum returns.", image: "/src/assets/service-04.png" },
+    { title: "Engineering, Procurement, Construction", desc: "Smart, reliable solar EPC—design to delivery, done right.", image: "../assets/service-01.jpeg" },
+    { title: "Operation and Maintenance", desc: "Regular solar maintenance for maximum efficiency and long-term savings.", image: "../assets/ONM2.jpg" },
+    { title: "Re-engineering and Redevelopment", desc: "Innovative redesigns for better solar performance, cost-efficiency, and sustainability.", image: "../assets/service-03.png" },
+    { title: "Turnkey Projects", desc: "Efficient turnkey solar plants—optimized design, expert delivery, maximum returns.", image: "../assets/service-04.png" },
   ];
 
   return (

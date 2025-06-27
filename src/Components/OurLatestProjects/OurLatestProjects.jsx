@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 const OurLatestProjects = () => {
   const projects = [
-    { title: "100 kW Solar Grid Tied System", desc: "Location: Delhi", image: "/src/assets/PROJECT1.jpg" },
-    { title: "1 MW Solar Grid Tied System", desc: "Location: Panipat, Haryana", image: "/src/assets/PROJECT2.jpg" },
-    { title: "250 kW Solar Grid Tied System", desc: "Location: Haryana", image: "/src/assets/PROJECT3.jpg" },
-    { title: "350 kW Solar Grid Tied System", desc: "Location: Haryana", image: "/src/assets/PROJECT4.jpg" },
-    { title: "100 kW Solar Grid Tied System", desc: "Location: Delhi", image: "/src/assets/PROJECT5.jpg" },
-    { title: "100 kW Solar Grid Tied System", desc: "Location: Delhi", image: "/src/assets/PROJECT6.jpg" },
+    { title: "100 kW Solar Grid Tied System", desc: "Location: Delhi", image: "/assets/PROJECT1.jpg" },
+    { title: "1 MW Solar Grid Tied System", desc: "Location: Panipat, Haryana", image: "/assets/PROJECT2.jpg" },
+    { title: "250 kW Solar Grid Tied System", desc: "Location: Haryana", image: "/assets/PROJECT3.jpg" },
+    { title: "350 kW Solar Grid Tied System", desc: "Location: Haryana", image: "/assets/PROJECT4.jpg" },
+    { title: "100 kW Solar Grid Tied System", desc: "Location: Delhi", image: "/assets/PROJECT5.jpg" },
+    { title: "100 kW Solar Grid Tied System", desc: "Location: Delhi", image: "/assets/PROJECT6.jpg" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

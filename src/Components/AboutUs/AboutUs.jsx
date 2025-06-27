@@ -103,7 +103,7 @@ const AboutUs = () => {
                 className="relative mt-6 group sm:mt-8 lg:mt-8"
               >
                 <img
-                  src="/src/assets/home-sec1-05.jpg"
+                  src="../assets/home-sec1-05.jpg"
                   alt="Solar Installation"
                   className="w-full h-[160px] sm:h-[200px] lg:h-[240px] object-cover rounded-2xl shadow-lg border-2 border-gray-100 transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
@@ -119,7 +119,7 @@ const AboutUs = () => {
                 className="relative group"
               >
                 <img
-                  src="/src/assets/home-sec1-02.jpeg"
+                  src="../assets/home-sec1-02.jpeg"
                   alt="Renewable Energy"
                   className="w-full h-[160px] sm:h-[200px] lg:h-[240px] object-cover rounded-2xl shadow-lg border-2 border-gray-100 transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
@@ -132,7 +132,7 @@ const AboutUs = () => {
                 className="relative mt-4 group sm:mt-8 lg:mt-4"
               >
                 <img
-                  src="/src/assets/home-sec1-04.jpeg"
+                  src="../assets/home-sec1-04.jpeg"
                   alt="Solar Panels"
                   className="w-full h-[160px] sm:h-[200px] lg:h-[240px] object-cover rounded-2xl shadow-lg border-2 border-gray-100 transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
@@ -145,7 +145,7 @@ const AboutUs = () => {
                 className="relative group"
               >
                 <img
-                  src="/src/assets/home-sec1-03.jpg"
+                  src="../assets/home-sec1-03.jpg"
                   alt="Sustainable Energy"
                   className="w-full h-[160px] sm:h-[200px] lg:h-[240px] object-cover rounded-2xl shadow-lg border-2 border-gray-100 transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"

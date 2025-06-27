@@ -19,8 +19,9 @@ import OurLatestProjects from './Components/OurLatestProjects/OurLatestProjects'
 import Segments from './Components/Segments/Segments';
 import AboveFooterSection from './Components/AboveFooterSection/AboveFooterSection';
 import RNRPage from './Components/RNRPage/RNRPage';
-import TurnkeyPage from './Components/TurnkeyPage/TurnkeyPage'; // Using the provided import path
+ // Using the provided import path
 import AssociatesPage from './Components/AssociatesPage/AssociatesPage'; // Including AssociatesPage
+import TurnkeyPage from './Components/TurnkeyPage/TurnKeyPage';
 
 // ScrollToTop component to handle navigation reset
 const ScrollToTop = ({ children }) => {
@@ -47,7 +48,7 @@ const App = () => {
             <Route path="/services/epc" element={<EPCPage />} />
             <Route path="/services/omm" element={<ONMPage />} />
             <Route path="/services/re-engineering" element={<RNRPage/>} />
-            <Route path="/services/turnkey" element={<TurnkeyPage />} /> {/* Linked to TurnkeyPage */}
+            <Route path="/services/turnkey" element={<TurnkeyPage/>} /> {/* Linked to TurnkeyPage */}
             <Route path="/segments" element={<SegmentsPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/blog" element={<BlogPage />} />

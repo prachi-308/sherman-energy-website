@@ -14,12 +14,12 @@ const ProjectsPage = () => {
 
   // Projects data with online images
   const projects = [
-    { id: 1, title: "250 KW Solar grid tied system", desc: "Haryana, 2023 - Large-scale commercial solar installation with advanced grid integration technology.", img: "/src/assets/PROJECT1.jpg", tags: ["Grid-tied system", "High efficiency panels", "Remote monitoring", "25-year warranty"] },
-    { id: 2, title: "250 KW solar grid tied system", desc: "Haryana, 2023 - Industrial solar installation for manufacturing facility with smart energy management.", img: "/src/assets/PROJECT2.jpg", tags: ["Grid-tied system", "ROI optimization", "Energy storage", "Load balancing"] },
-    { id: 3, title: "1 MW Solar grid tied system", desc: "Panipat, Haryana, 2022 - Mega-scale utility solar installation contributing to grid stability and renewable energy goals.", img: "/src/assets/PROJECT3.jpg", tags: ["Utility scale", "Grid stability", "CAD/A system", "Environmental compliance"] },
-    { id: 4, title: "100 KW Solar grid tied system", desc: "Delhi, 2023 - Urban commercial solar installation with space-optimized design for maximum efficiency.", img: "/src/assets/PROJECT4.jpg", tags: ["Space-optimized", "Smart inverters", "Urban installation", "Net metering"] },
-    { id: 5, title: "100 KW Solar grid tied system", desc: "Delhi, 2022 - Institutional solar project promoting sustainable energy awareness.", img: "/src/assets/PROJECT5.jpg", tags: ["Educational focus", "Research integration", "Student learning", "Community benefit"] },
-    { id: 6, title: "100 KW Solar grid tied system", desc: "Delhi, 2023 - Large residential complex solar installation with community energy sharing.", img: "/src/assets/PROJECT6.jpg", tags: ["Residential complex", "Community sharing", "Reduced electricity bills", "Green living"] },
+    { id: 1, title: "250 KW Solar grid tied system", desc: "Haryana, 2023 - Large-scale commercial solar installation with advanced grid integration technology.", img: "../assets/PROJECT1.jpg", tags: ["Grid-tied system", "High efficiency panels", "Remote monitoring", "25-year warranty"] },
+    { id: 2, title: "250 KW solar grid tied system", desc: "Haryana, 2023 - Industrial solar installation for manufacturing facility with smart energy management.", img: "../assets/PROJECT2.jpg", tags: ["Grid-tied system", "ROI optimization", "Energy storage", "Load balancing"] },
+    { id: 3, title: "1 MW Solar grid tied system", desc: "Panipat, Haryana, 2022 - Mega-scale utility solar installation contributing to grid stability and renewable energy goals.", img: "../assets/PROJECT3.jpg", tags: ["Utility scale", "Grid stability", "CAD/A system", "Environmental compliance"] },
+    { id: 4, title: "100 KW Solar grid tied system", desc: "Delhi, 2023 - Urban commercial solar installation with space-optimized design for maximum efficiency.", img: "../assets/PROJECT4.jpg", tags: ["Space-optimized", "Smart inverters", "Urban installation", "Net metering"] },
+    { id: 5, title: "100 KW Solar grid tied system", desc: "Delhi, 2022 - Institutional solar project promoting sustainable energy awareness.", img: "../assets/PROJECT5.jpg", tags: ["Educational focus", "Research integration", "Student learning", "Community benefit"] },
+    { id: 6, title: "100 KW Solar grid tied system", desc: "Delhi, 2023 - Large residential complex solar installation with community energy sharing.", img: "../assets/PROJECT6.jpg", tags: ["Residential complex", "Community sharing", "Reduced electricity bills", "Green living"] },
   ];
 
   // Carousel images

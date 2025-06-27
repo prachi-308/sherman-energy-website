@@ -18,7 +18,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center">
         <img
-          src="/src/assets/logo-sherman-energy-website-removebg-preview.png"
+          src="../assets/logo-sherman-energy-website-removebg-preview.png"
           alt="Sherman Energy Logo"
           className="object-contain h-12 w-38 sm:w-30 sm:h-19 md:w-60 md:h-60 lg:w-60 lg:h-60"
           loading="lazy"

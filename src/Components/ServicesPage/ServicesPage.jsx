@@ -18,7 +18,7 @@ const ServicesPage = () => {
       title: "Engineering, Procurement, Construction",
       desc: "Expert design and execution of solar projects with top-quality materials.",
       items: ["Complete project design", "Quality procurement", "Professional installation", "Testing & commissioning"],
-      img: "/src/assets/EPC3.jpg",
+      img: "../assets/EPC3.jpg",
       icon: "fa-tools",
       buttonText: "Learn More About EPC"
     },
@@ -26,7 +26,7 @@ const ServicesPage = () => {
       title: "Operation and Maintenance",
       desc: "Ongoing support for maximum solar panel performance with 24/7 care.",
       items: ["24/7 monitoring", "Preventive maintenance", "Performance optimization", "Technical support"],
-      img: "/src/assets/ONM1.jpg",
+      img: "../assets/ONM1.jpg",
       icon: "fa-wrench",
       buttonText: "Explore O&M Services"
     },
